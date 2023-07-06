@@ -32,6 +32,8 @@ headerMode: is-grey
 
 <section id="resources" title="Ressourcen, Artikel und Demos" class="is-grey">
     <h2>Ressourcen, Artikel und Demos</h2>
+    {% capture content %}{% include links.html %}{% endcapture %}
+    {{ content | markdownify }}
 
 </section>
 

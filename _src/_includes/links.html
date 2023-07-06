@@ -2,5 +2,18 @@
 
 <ul class="grid">
 {% for link in links %}
+<li class="card">
+  <figure>
+      <img src="links/images/{{link.image}}" alt="Teaser Bild für {{link.title}}">
+      <figcaption>
+          <a href= "{{link.page-url}}">
+              <h3>{{link.title}}</h3>
+              <p>{{link.description}}</p>
+          </a>
+      </figcaption>
+  </figure>
+</li>
 {% endfor %}
 </ul>
+
+

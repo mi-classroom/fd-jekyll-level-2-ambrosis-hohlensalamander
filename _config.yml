@@ -22,5 +22,7 @@ kramdown:
 collections:
   faq:
     output: false
+  links:
+    output: true
 
   

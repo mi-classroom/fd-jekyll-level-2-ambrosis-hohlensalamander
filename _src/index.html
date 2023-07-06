@@ -36,5 +36,6 @@ headerMode: is-grey
 </section>
 
 <section id="projects-and-courses" title="Projekt und Kurse" class="long-text is-dark">
-
+    {% capture content %}{% include projects-and-courses.html %}{% endcapture %}
+    {{ content | markdownify }}
 </section>

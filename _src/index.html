@@ -27,6 +27,8 @@ headerMode: is-grey
         <h2>FAQ</h2>
         <p>Ein paar Fragen tauchten immer wieder auf. Diese haben wir hier mal gesammelt und nach bestem Wissen und Gewissen beantwortet 😀.</p>
     </div>
+    {% capture content %}{% include faq.html %}{% endcapture %}
+    {{ content | markdownify }}
 
 </section>
 
